@@ -1,0 +1,33 @@
+<Context path="/openweb" docBase="openweb"
+        debug="5" reloadable="true" crossContext="true">
+	
+    <Resource 
+      name="log_post"
+      auth="Container"
+      type="javax.sql.DataSource"
+      username="ayto"
+      password="ayto"
+      maxTotal="50"
+      maxIdle="20"
+      maxWait="10000"
+      driverClassName="org.postgresql.Driver"
+      url="jdbc:postgresql://localhost:5432/logopenweb"/>
+      />
+      
+      <Resource 
+      name="control_post"
+      auth="Container"
+      type="javax.sql.DataSource"
+      username="ayto"
+      password="ayto"
+      maxTotal="50"
+      maxIdle="20"
+      maxWait="10000"
+      timeBetweenEvictionRunsMillis="180000"
+      removeAbandonedOnMaintenance="true"
+      removeAbandonedOnBorrow="true"
+      driverClassName="org.postgresql.Driver"
+      url="jdbc:postgresql://localhost:5432/openweb"/>
+      />
+        
+</Context>

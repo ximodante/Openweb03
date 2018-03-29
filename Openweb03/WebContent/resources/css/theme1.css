@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+/************************** Bodies *******************************/
+body {
+	margin: 0px;
+	font-size: 14px;
+	color: #616161;
+}
+
+.bodyLogin {
+	font-size: 15px;
+	margin-top: 2%;
+	margin-left: 30%;
+	margin-right: 15%;
+}
+
+/************************** End Bodies *******************************/
+
+
+
+a:active, a:link, a:visited {
+	color: #483D8B;    
+}
+
+a:hover {
+	color: #8CAFCD;
+}
+
+/**************************** Text box *******************************/
+input, textarea {
+	border: 1px solid #BBBBBB;
+	font-size: 14px;
+	background: #F5F5F5;
+	color: black;
+	
+}
+
+.inputReadOnly{
+
+	border: 1px solid #BBBBBB;
+	font-size: 14px;
+	background: #DCDCDC;
+	color: black;
+	
+
+}
+
+/**************************** Tool Bar *******************************/
+
+.toolBarAction{
+	
+	vertical-align: top;
+	border-style: none;
+	
+}
+
+
+/**************************** End Tool Bar *******************************/
+
+/**************************** Output panel *******************************/
+
+.outPanel{
+	
+	font-size: 24px;
+	text-align: center;
+	color: gray;	
+}
+
+.outDataTplView{
+
+	padding: 5%;
+	font-size: 14px;
+	color: gray;		
+}
+
+.listTplView{
+
+	font-size: 14px;
+	color: gray;
+	background: #FFF5E6;		
+}
+
+.outPanelMenu{
+
+	width: 200px;
+	border-style: none;
+		
+}
+
+.outPanelView{
+	
+	padding: 0%;
+	border-style: none;
+
+}
+
+.hidePanel{
+
+	cursor: pointer;
+	
+}
+
+.modalPanel{
+
+	margin-top: 15%;
+	margin-left: 25%;
+	
+}
+
+/**************************** End output panel *******************************/
+
+
+
+/**************************** Panel Grid *******************************/
+
+.top{
+	
+	vertical-align: top;
+	
+}
+
+.rowTop{
+	
+	vertical-align: top;
+}
+
+/**************************** End Panel Grid *******************************/
+
+
+/**************************** Cursor *******************************/
+.cursorOnRowMouseOver{
+
+	background-color:gray;
+	cursor: pointer;
+		
+}
+
+.cursorOnRowMouseOut{
+
+	background-color: white;
+
+}
+
+/**************************** End Cursor *******************************/
+
+/**************************** Output text *******************************/
+
+.output{	
+	
+	font-size: 14px;
+	color: gray;
+	
+}
+
+.outputlabel{	
+	
+	font-size: 15px;
+	color: #333399;
+	
+}
+
+.outputTitle{
+	
+	font-size: 24px;
+	color: gray;	
+	
+	
+}
+.outputRight{
+	
+	font-size: 13px;
+	color: #333333;
+	text-align: right; 
+	border-color: blue;
+		
+}
+/************************** End Output text *******************************/
+
+
+
+
+
+/**************************** Button *******************************/
+
+.submit {
+	background: #A9A9A9;
+	color: white;
+	margin: 5px;
+	border-color: gray;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.button{
+
+	font-size: 14px;
+	cursor: pointer;
+
+}
+
+/**************************** End Button *******************************/
+
+
+/************************** Tables *******************************/
+
+.tableHeader{
+
+	font-size: 14px;
+	background: #A9A9A9;
+	color: white;
+	border-color: gray;
+	border: 1px solid #A9A9A9;
+	
+}
+
+.table_1{
+	
+	border-color: gray;
+	border: 1px solid #A9A9A9;
+	
+
+}
+
+/************************** End Tables *******************************/
+
+
+/************************** Headers *******************************/
+
+.header {
+ 
+ 	font-size: 14px; 
+	background-color: #F5F5F5;
+	
+}
+
+.header1{
+
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/************************** End Headers *******************************/
+
+.errors {
+	
+	color: red;
+	vertical-align: middle;
+}
+
+.required {
+	font-size: 14px;
+	color: red;
+	
+}
+
+.information {
+	
+	font-size: 14px;
+	color: #330099;	
+
+}
+

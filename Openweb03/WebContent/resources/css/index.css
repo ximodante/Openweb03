@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/******************** body **********/
+/*******************************************/
+.general {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/**********************    Errors   ****************************************************/
+/****************************************************************************************/
+.errorTipus1 {
+	font-size: 16px;
+	color: red;
+	display: inline-block;
+	background-color: #f2f4fd;
+	padding: 10px;
+}
+
+/******************** Caixes **********/
+/*******************************************/
+.caixaDreta {
+	
+	text-align: right;
+	
+}
+
+.caixaCentre {
+	
+	text-align: center;
+	padding: 2em;
+	
+}
+
+.caixa2Centre {
+	
+	text-align: center;
+	
+}
+
+.caixa3Centre {
+	
+	display: flex;
+	justify-content: center;
+	
+}
+
+.caixaMargen{
+	
+	margin: 0px 15px;
+}
+
+.caixaTipus1 {
+	border-bottom: 1px solid #d50000;
+	/*display: table;
+	border-collapse: collapse;
+	*width: 100%;*/
+}
+
+/*************************    Text   ****************************************************/
+/****************************************************************************************/
+
+.txtRoig14 {
+	
+	font-size: 20px;
+	margin: 20px;
+	color: #C41314;
+}
+
+/**********************    Botons   ****************************************************/
+/****************************************************************************************/
+
+.btm3 {   
+	
+    font-size: 14px !important;
+	color: #fff;
+	border: 0px;
+	display: inline-block;
+	background: #C41314;
+	width: 100%;
+	height: 2.3em;
+}
+
+/**********************    selectOneMenu   ****************************************************/
+/****************************************************************************************/
+
+.oneMenuType1{
+	
+	 color: #9c3245;
+    background-color: #f9f9f9;
+	
+}
+
+/**********************    PrimeFaces   ****************************************************/
+/****************************************************************************************/
+
+.ui-inputgroup{
+	
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+	
+}
+
+.ui-inputgroup-addon{
+	
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 4px;
+    display: inline-block;
+    text-align: center;
+    min-width: 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d6d6;
+    background-color: #f0f0f0;
+    color: #222;
+}

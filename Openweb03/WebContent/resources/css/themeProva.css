@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/************************** Bodies *******************************/
+.bodyTp1 {
+
+	background:#ff8000;
+	color: #616161;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+.bodyLogin {
+	font-size: 15px;
+	margin-top: 2%;
+	margin-left: 30%;
+	margin-right: 15%;
+}
+
+/************************** End Bodies *******************************/
+
+/************************** Container ********************************/
+.containerCenter{
+	
+	text-align: center;
+
+}
+
+
+
+/************************** End container ****************************/

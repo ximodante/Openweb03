@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+	<ui:composition template="./plantilles/plantilla02.xhtml">
+	
+		<ui:define name="menuInformacio">
+		
+			<div class="caixaTipus1">
+			
+				<div class="caixaFlex">
+				
+					<div class="caixaPadding10">
+				
+						<h:outputText id="idusuari" styleClass="txt14Gris" value="#{rsclabel.usuariConectat} #{ctx.connControl.user.description}" />
+						
+					</div>
+					
+					<div class="caixaMenuTp1">
+						
+						<p:outputPanel id="idMenuBarHor">
+   		
+   							<p:menubar model="#{main.getMenuBar()}"/>
+   		
+   						</p:outputPanel>	
+					
+					</div>
+					
+			<!-- 
+					<p:outputPanel id="rutaPrograma">
+						<div class="celdaCapTipus5">					
+							<h:outputText id="idtxtprogram" styleClass="txt14Gris" binding="#{principal.programaActual}" />					
+						</div>
+					</p:outputPanel> -->
+					
+				</div>
+			</div>
+		
+		</ui:define>
+		
+		<!--
+		<ui:define name="menuHorizontal">
+			
+				<p:menubar  styleClass="menuBarTipo1" model="#{main.getMenuBar()}"/>
+				
+		</ui:define>
+		-->
+	
+		<ui:define name="menuLateral">
+			
+				<p:panelMenu id="menu1"  styleClass="caixaPadding10"  model="#{main.menuLateral}"/>
+			
+		</ui:define>
+		
+		
+	</ui:composition>
+	
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+ 		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+ 		xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+	<h:head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<h:outputStylesheet library="css" name="index.css" />
+		<h:outputStylesheet library="css" name="indexMobil.css" media="(max-width: 800px)" />
+		<title>OpenWeb</title>
+		 		
+	</h:head>
+
+	<h:body styleClass="general">
+	
+	<h:form id="form"> 
+	
+		<div id = "idcap">
+    	
+    		<ui:include src="/pages/plantilles/cap.xhtml"/>
+    		   		
+		</div>
+	
+		<div id= "cos">
+	
+			<ui:insert name="cos"/>
+	
+		</div>
+	
+	</h:form>
+	
+	</h:body>
+
+</html>

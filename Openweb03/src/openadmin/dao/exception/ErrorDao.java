@@ -1,0 +1,6 @@
+package openadmin.dao.exception;
+
+public enum ErrorDao {
+
+	CONNETION,	OPERATION, TRANSACTION, LOG, PERSIST, UPDATE, REMOVE, FIND_PK, FIND_DESCRIPTION, FIND_OBJECTS, COMMIT;
+}

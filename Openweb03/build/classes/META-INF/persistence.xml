@@ -1,0 +1,41 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+   <persistence-unit name="log_post" transaction-type="RESOURCE_LOCAL">
+      <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+      <jta-data-source>java:comp/env/log_post</jta-data-source>
+      <properties>
+      		<property name="hibernate.dialect"	value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="false" />				  
+       		<!--  <property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider"/> 
+      
+      		<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/logopenweb" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.username" value="ayto" />
+			<property name="hibernate.connection.password" value="ayto" /> -->
+      </properties>
+   </persistence-unit>
+    
+   <persistence-unit name="control_post" transaction-type="RESOURCE_LOCAL">
+      <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+      <jta-data-source>java:comp/env/control_post</jta-data-source>
+      <properties>
+      		<property name="hibernate.dialect"	value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="false" />				  
+       		<!--  <property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider"/> 
+      
+      		<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/openweb" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.username" value="ayto" />
+			<property name="hibernate.connection.password" value="ayto" /> -->
+			   
+      </properties>
+   </persistence-unit>
+
+
+</persistence>
+

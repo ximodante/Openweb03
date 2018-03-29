@@ -1,0 +1,19 @@
+#----------------------------------------------------------------------------
+# ACTION CLASS DEFINITION
+#------------------+---------------------------------------------------------
+#Description  MODEL CONTROL             |
+#---------------------------------------+
+openadmin.model.control.Administracion
+openadmin.model.control.Access  
+openadmin.model.control.Action      
+openadmin.model.control.ClassName
+openadmin.model.control.ActionViewRole      
+openadmin.model.control.EntityAdm
+openadmin.model.control.MenuItem
+openadmin.model.control.Program
+openadmin.model.control.Role
+openadmin.model.control.User
+openadmin.util.firstcontrolload.FirstControlLoad
+#------------------+---------------------------------------------------------
+#Description  MODEL CONFIGURACION            |
+#---------------------------------------+

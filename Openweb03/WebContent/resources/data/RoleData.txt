@@ -1,0 +1,13 @@
+#----------------------------------------------
+# ROLE DEFINITION
+#
+# NOTES: you should use only partial description as                            
+#        as the program will make the description of
+#        a ROL as program.description 
+#        example: PROGRAM01.ADMIN
+#-------------------+--------------------+-----------
+#Description (PART) |Program description
+#-------------------+--------------------+
+ADMIN               |control          
+#-------------------+--------------------+  
+
