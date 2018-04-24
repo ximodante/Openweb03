@@ -46,7 +46,7 @@ import lombok.Setter;
 
 @Named(value = "ctx")
 @SessionScoped
-public class ContextAction implements Serializable {
+public class ContextAction implements Serializable {   
 
 	private static final long serialVersionUID = 21100901L;
 
