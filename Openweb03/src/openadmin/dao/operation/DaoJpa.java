@@ -122,6 +122,8 @@ public class DaoJpa implements DaoOperationFacade, Serializable{
 		log.activateLog(obj.isDebugLog());
 		log.activateDetailLog(false);
 		
+		obj.setChanges(this.user.getDescription());
+		
 		try{
 			if (em.isOpen()){				
 				em.persist(obj);

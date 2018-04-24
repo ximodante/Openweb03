@@ -151,8 +151,6 @@ public class JSFComponents implements Serializable{
 			
 			Application app = FacesContext.getCurrentInstance().getApplication();
 			
-			System.out.println("Accio: " + pAction);
-			
 			CommandButton button = (CommandButton)app.createComponent(CommandButton.COMPONENT_TYPE);
 			button.setActionExpression(createMethodExpression(pAction, null, typeClass));
 			button.setIcon("ui-icon-star");

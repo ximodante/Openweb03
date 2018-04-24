@@ -18,6 +18,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+
+import openadmin.model.Audit;
 import openadmin.model.Base;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -31,7 +33,7 @@ import lombok.ToString;
 @Entity
 @ToString @NoArgsConstructor
 @Table(name = "nomClasse", schema = "control")
-public class ClassName implements Base, java.io.Serializable {
+public class ClassName extends Audit implements Base, java.io.Serializable {
 
 	private static final long serialVersionUID = 01011001L;
 	

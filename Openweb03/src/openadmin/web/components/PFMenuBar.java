@@ -155,7 +155,7 @@ public class PFMenuBar implements Serializable{
 			item = new DefaultMenuItem(langType.msgActions(label)); 
 			item.setId("" + ac.getId());
 			item.setCommand("#{ctx.getView(" + view + ")." + ac.getDescription().substring(ac.getDescription().indexOf("_")).trim() + "()}");
-			item.setUpdate("form1");
+			item.setUpdate("form1:idContingut");
 			menuModel.addElement(item);
 			
 		}
@@ -165,6 +165,7 @@ public class PFMenuBar implements Serializable{
 			item = new DefaultMenuItem(langType.msgActions("exit"));
 			item.setId("iditemexit");
 			item.setCommand("#{ctx.getView(" + view + ")._exit()}");
+			//item.setCommand("#{main._exit()}");
 			item.setUpdate("form1:idContingut");
 			menuModel.addElement(item);
 		}

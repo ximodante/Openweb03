@@ -19,12 +19,13 @@ import lombok.Setter;
 import lombok.ToString;
 import openadmin.annotations.Default;
 import openadmin.annotations.Search;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 
 @Entity
 @ToString @NoArgsConstructor
 @Table(name = "accioVistaRol", schema = "control", uniqueConstraints = @UniqueConstraint(columnNames =  { "rol", "menuitem","accio" }))
-public class ActionViewRole implements Base, java.io.Serializable {
+public class ActionViewRole extends Audit implements Base, java.io.Serializable {
 
 	private static final long serialVersionUID = 01011001L;
 	

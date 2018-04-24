@@ -15,11 +15,12 @@ import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.Setter;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 
 @Entity
 @Table(name = "detalleLog", schema = "log")
-public class Detail implements Base, Serializable {
+public class Detail extends Audit implements Base, Serializable {
 
 	private static final long serialVersionUID = 06111702L;
 	

@@ -27,6 +27,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 import openadmin.util.cripto.Encriptacion;
 
@@ -36,7 +37,7 @@ import openadmin.util.cripto.Encriptacion;
 @Entity
 @ToString @NoArgsConstructor
 @Table(name = "usuari", schema = "control")
-public class User implements Base, java.io.Serializable {
+public class User extends Audit implements Base, java.io.Serializable {
 
 	private static final long serialVersionUID = 01011001L;
 	

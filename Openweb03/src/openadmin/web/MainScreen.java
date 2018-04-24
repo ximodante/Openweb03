@@ -72,6 +72,8 @@ public class MainScreen implements Serializable {
 	
 	private boolean visualiza = false;
 	
+	//private OutputPanel outView = (OutputPanel)FacesContext.getCurrentInstance().getViewRoot().findComponent("form1:idContingut");
+	
 	//Fi atributs
 
 	///////////////////////////////////////////////////////////////////
@@ -193,10 +195,16 @@ public class MainScreen implements Serializable {
 		
 	}
 	
+	/*****************************************************************************************************************************
+	*
+	*              Load screen
+	********************************************************************************************************************************/
 	public void loadScreen(Number pMenuItem) 
 			throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException, ClassNotFoundException {
 		
-		if (ctx.numberView()>0) ctx.deleteAllView();
+		System.out.println("Model directe");
+		
+		if (ctx.numberView() > 0) ctx.deleteAllView();
 		
 		MenuItem menuItem = new MenuItem();
 		menuItem.setId(pMenuItem);
@@ -209,6 +217,7 @@ public class MainScreen implements Serializable {
 	public void loadScreenRecursive(String pMenuItem) 
 			throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException, ClassNotFoundException {
 		
+		System.out.println("Model recursiu");
 		MenuItem menuItem = new MenuItem();
 		menuItem.setDescription(pMenuItem);
 		menuItem = ctx.getConnControl().findObjectDescription(menuItem);
@@ -224,8 +233,9 @@ public class MainScreen implements Serializable {
 		FacesContext _context = FacesContext.getCurrentInstance();	
 		OutputPanel outView = (OutputPanel)_context.getViewRoot().findComponent("form1:idContingut");
 		
-		System.out.println("Llista main: " + outView.getChildren());
+		//System.out.println("Llista main: " + outView.getChildren());
 		
+		//System.out.println("Nom vista: " + viewDefault);
 		
 		if (outView.getChildCount() > 0) {
 			
@@ -256,6 +266,7 @@ public class MainScreen implements Serializable {
 			view.setBase((Base) obj);
 			view.execute(lang, numberView, lstActionView);
 			outView.getChildren().add(view.getOutPanel());
+			
 			System.out.println("Afegeix outputpanel + vista: " + numberView);
 			ctx.setView(numberView, view);
 					
@@ -263,6 +274,31 @@ public class MainScreen implements Serializable {
 		
 		
 	}
+	
+	/**
+	public void closedScreen() {
+		
+		Base _obj = ctx.getView(ctx.numberView()).getBase();
+		
+		if (null != _obj && ctx.numberView() > 1){
+			
+			//FacesContext _context = FacesContext.getCurrentInstance();
+			
+			//OutputPanel outView = (OutputPanel)_context.getViewRoot().findComponent("form1:idContingut");
+			
+			if (outView.getChildCount() > 0) {
+				
+				
+				System.out.println("Esborra 2 component del contingu eixir");
+				
+				outView.getChildren().clear();
+				
+			}
+			
+			ctx.deleteView();
+			outView.getChildren().add(ctx.getView(ctx.numberView()).getOutPanel());
+		}
+	}*/
 
 	
 	/**

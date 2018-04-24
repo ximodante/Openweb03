@@ -20,6 +20,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import openadmin.annotations.Default;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -32,7 +33,7 @@ import lombok.ToString;
 @Entity
 @ToString @NoArgsConstructor
 @Table(name = "programa", schema = "control")
-public class Program implements Base, java.io.Serializable {
+public class Program extends Audit implements Base, java.io.Serializable {
 
 	private static final long serialVersionUID = 01011001L;
 	

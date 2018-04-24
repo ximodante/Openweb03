@@ -26,7 +26,6 @@ public class InterceptorComponent {
 		
 		String objectAction = "#{ctx.getView(" + numberView + ").base." + pField.getName() + "}";
 		
-		
 		if (pField.isAnnotationPresent(Default.class)){
 			
 			readOnly = pField.getAnnotation(Default.class).readOnly();
@@ -82,7 +81,6 @@ public class InterceptorComponent {
 													true, 
 													 "#{ctx.getView(" + numberView + ").base." + pField.getName() + ".description}",
 													String.class));
-					
 					
 					//Falta comprobar si es pot dibuixar en funcio de rol (Per fer)
 					if (pField.isAnnotationPresent(OpenScreen.class)  && pField.getAnnotation(OpenScreen.class).normal()) {

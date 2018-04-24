@@ -30,12 +30,13 @@ import org.apache.commons.lang3.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 
 @Entity
 @Table(name = "log", schema = "log")
 
-public class Log implements Base, Serializable {	
+public class Log extends Audit implements Base, Serializable {	
 	
 	private static final long serialVersionUID = 06111701L;
 	

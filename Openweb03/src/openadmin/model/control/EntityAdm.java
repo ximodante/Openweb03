@@ -26,12 +26,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import openadmin.annotations.Default;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 
 @Entity
 @ToString @NoArgsConstructor
 @Table(name = "entitatAdm", schema = "control")
-public class EntityAdm implements Base, java.io.Serializable {
+public class EntityAdm extends Audit implements Base, java.io.Serializable {
 
 	private static final long serialVersionUID = 01011001L;
 	

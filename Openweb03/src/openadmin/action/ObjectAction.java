@@ -114,11 +114,9 @@ public class ObjectAction implements Serializable, ObjectActionFacade{
 			
 		if (null != _obj && ctx.numberView() > 1){
 						
-			ReflectionField refl = new ReflectionField();
+			//ReflectionField refl = new ReflectionField();
 				
-			refl.copyObject(_obj, ctx.getView(ctx.numberView() - 1).getBase(), ctx.getView(ctx.numberView() - 1).getMetodo());
-			
-			ctx.deleteView();
+			//refl.copyObject(_obj, ctx.getView(ctx.numberView() - 1).getBase(), ctx.getView(ctx.numberView() - 1).getMetodo());
 			
 			FacesContext _context = FacesContext.getCurrentInstance();
 				
@@ -126,13 +124,17 @@ public class ObjectAction implements Serializable, ObjectActionFacade{
 			
 			System.out.println("Llista exit: " + outView.getChildren().get(0).getId());
 		
-			if (outView.getChildCount() > 0 || !outView.getChildren().isEmpty()) {
+			if (outView.getChildCount() > 0) {
+				
 				
 				System.out.println("Esborra component del contingu eixir");
-				
+				System.out.println(outView.getChildren().size());
 				outView.getChildren().clear();
+				System.out.println(outView.getChildren().size());
 			}
-			
+			System.out.println(outView.getChildren().size());
+			ctx.deleteView();
+			System.out.println(outView.getChildren().size());
 			System.out.println("Vista: " + ctx.getView(ctx.numberView()));
 			outView.getChildren().add(ctx.getView(ctx.numberView()).getOutPanel());
 				

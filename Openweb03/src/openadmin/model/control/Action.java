@@ -21,6 +21,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import openadmin.model.Audit;
 import openadmin.model.Base;
 
 import javax.validation.constraints.NotNull;
@@ -35,7 +36,7 @@ import lombok.ToString;
 @Entity
 @ToString @NoArgsConstructor
 @Table(name = "accions", schema = "control")
-public class Action implements Base, java.io.Serializable {
+public class Action extends Audit implements Base, java.io.Serializable {
 
 	private static final long serialVersionUID = 01011001L;
 	

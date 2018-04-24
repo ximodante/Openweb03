@@ -1,5 +1,7 @@
 package openadmin.model;
 
+import java.time.LocalDateTime;
+
 /**
   * <desc>interface that stores the unique information for all classes dao</desc>
   * <responsibility>Represents a unique object</responsibility>
@@ -47,5 +49,15 @@ public interface Base extends Comparable<Base>{
 		return getDescription().compareTo(o.getDescription());
 	
 	}
+	
+	public String getLastUser();
+	
+	public void setLastUser(String pUser);
+	
+	public LocalDateTime getAuditData();
+	
+	public void setAuditData(LocalDateTime pDate);
+	
+	public void setChanges(String User);
 		
 }

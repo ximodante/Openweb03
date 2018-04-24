@@ -12,11 +12,12 @@ import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.Setter;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 
 @Entity
 @Table(name = "sino", schema = "util")
-public class SiNo implements Base, java.io.Serializable {
+public class SiNo extends Audit implements Base, java.io.Serializable {
 	
 	private static final long serialVersionUID = 29061201L;
 	

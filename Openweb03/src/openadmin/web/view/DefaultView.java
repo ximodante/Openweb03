@@ -11,6 +11,7 @@ import javax.faces.component.html.HtmlPanelGroup;
 
 import org.primefaces.component.outputpanel.OutputPanel;
 
+import lombok.Getter;
 import openadmin.model.control.Action;
 import openadmin.util.lang.LangType;
 import openadmin.web.components.JSFComponents;
@@ -25,6 +26,7 @@ public class DefaultView extends ObjectAction implements Serializable, ViewFacad
 	private LangType lang;
 	
 	//Out container
+	@Getter
 	private OutputPanel outPanel;
 	
 	private JSFComponents pJSFComponents = new JSFComponents();
@@ -77,11 +79,6 @@ public class DefaultView extends ObjectAction implements Serializable, ViewFacad
 		outPanel.setStyleClass("caixaViewTp1");
 		outPanel.setId("idviewdefault");
 		
-	}
-	
-	public OutputPanel getOutPanel() {
-		
-		return outPanel;
 	}
 
 }

@@ -11,6 +11,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import openadmin.annotations.NoSql;
+import openadmin.model.Audit;
 import openadmin.model.Base;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -33,7 +34,7 @@ import lombok.ToString;
 @ToString @NoArgsConstructor
 @Entity
 @Table(name = "menuItem", schema = "control")
-public class MenuItem implements Base, Comparable<Base>, java.io.Serializable {
+public class MenuItem extends Audit implements Base, Comparable<Base>, java.io.Serializable {
 
 	private static final long serialVersionUID = 28110901L;
 
